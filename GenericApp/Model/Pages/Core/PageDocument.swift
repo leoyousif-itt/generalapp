@@ -14,5 +14,5 @@ protocol PPageDocument {
 
 struct PageDocument: PPageDocument {
     var title: String
-    var sections: [SectionDocument]?
+    var sections: [SectionDocument]? = []
 }

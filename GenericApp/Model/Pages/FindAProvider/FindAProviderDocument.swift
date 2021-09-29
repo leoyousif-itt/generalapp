@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct FindAProviderDoc {
+struct FindAProviderDoc: PPageDocument {
+    var sections: [SectionDocument]? = []
     var title: String =  "Find A Provider"
 }
 

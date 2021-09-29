@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SectionView:View {
-    var section: ASection
+    @ObservedObject var section: ASection
     var geometry: GeometryProxy?
     var isSubSection:Bool = false
     

@@ -8,7 +8,11 @@
 import Foundation
 
 struct WebViewDoc {
-    let site: URL? = URL(string: "https://www.stlukesonline.org/")
-    //URL(fileURLWithPath: "https://mychart.slhs.org/mychart/Authentication/Login?")
+    var site: URL? = URL(string: "https://www.stlukesonline.org/")
+    init(url: URL? = nil){
+        if let url = url {
+            self.site = url
+        }
+    }
 }
 

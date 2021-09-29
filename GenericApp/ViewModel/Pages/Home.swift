@@ -24,20 +24,7 @@ class Home: Page {
     
     
     init(){
-        super.init(title: "Home")
-        self.pageDocument.sections = []
-        
-        let splitSectionDocument = aSplitSectionDocument()
-        
-        let webViewContent = Content(type: .webView, payload: WebViewDoc())
-        let anotherSectionVM = ASection(content: webViewContent)
-        
-        
-        self.sectionVMs.append(aSectionVM)
-        self.sectionVMs.append(ASplitSection(content: splitSectionDocument.panes))
-        self.sectionVMs.append(aSectionVM)
-        self.sectionVMs.append(anotherSectionVM)
-        self.sectionVMs.append(ASplitSection(content: splitSectionDocument.panes))
+        super.init(title: "Home", pageDocument: HomeDocument())
     }
 }
 

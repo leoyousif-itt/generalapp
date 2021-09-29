@@ -9,6 +9,6 @@ import Foundation
 
 class FindAProvider: Page {
     init(){
-        super.init(title: "Home")
+        super.init(title: "Find A Provider", pageDocument: FindAProviderDoc())
     }
 }

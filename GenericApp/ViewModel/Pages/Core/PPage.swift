@@ -16,26 +16,16 @@ class Page:PPage {
     @Published var pageDocument: PPageDocument
     @Published var sectionVMs: [ASection] = []
     
-    @ViewBuilder func buildPage<PageView: View>(@ViewBuilder builder: ([SectionDocument]) -> PageView) -> some View {
-        if let sections = self.pageDocument.sections {
-            builder(sections)
-        }
+    @ViewBuilder func buildPage<PageView: View>(@ViewBuilder builder: () -> PageView) -> some View {
+        builder()
     }
     
-    init(title: String) {
-        self.pageDocument = PageDocument(title: title)
+    init(title: String, pageDocument: PPageDocument) {
+        self.pageDocument = pageDocument
         
         if let sections = pageDocument.sections {
             for section in sections {
-                switch section.type {
-                case .full:
-                    self.sectionVMs.append(ASection(content: section.content, section.type))
-                case .split:
-                    self.sectionVMs.append(ASection(content: section.content, section.type))
-                case .half:
-                    self.sectionVMs.append(ASection(content: section.content, section.type))
-                }
-                
+                self.sectionVMs.append(ASection(content: section.content, section.type))
             }
         }
     }

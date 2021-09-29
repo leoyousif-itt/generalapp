@@ -37,6 +37,9 @@
 		9CBB49B8270251E30003DE72 /* WebViewDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB49B7270251E30003DE72 /* WebViewDocument.swift */; };
 		9CBB49BA270252DD0003DE72 /* WebVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB49B9270252DD0003DE72 /* WebVM.swift */; };
 		9CBB49BC27025E710003DE72 /* MyChartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB49BB27025E710003DE72 /* MyChartPage.swift */; };
+		9CBB49BE2704DD480003DE72 /* HomeDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB49BD2704DD480003DE72 /* HomeDocument.swift */; };
+		9CBB49C42704F19F0003DE72 /* BillPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB49C32704F19F0003DE72 /* BillPay.swift */; };
+		9CBB49C62704F3570003DE72 /* BillPayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB49C52704F3570003DE72 /* BillPayPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		9CBB49B7270251E30003DE72 /* WebViewDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDocument.swift; sourceTree = "<group>"; };
 		9CBB49B9270252DD0003DE72 /* WebVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVM.swift; sourceTree = "<group>"; };
 		9CBB49BB27025E710003DE72 /* MyChartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartPage.swift; sourceTree = "<group>"; };
+		9CBB49BD2704DD480003DE72 /* HomeDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDocument.swift; sourceTree = "<group>"; };
+		9CBB49C32704F19F0003DE72 /* BillPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPay.swift; sourceTree = "<group>"; };
+		9CBB49C52704F3570003DE72 /* BillPayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPayPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +166,10 @@
 		9C5A419C26FBA2DA00ECA655 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				9CBB49A126FBBBBA0003DE72 /* EPages.swift */,
-				9CBB49A326FBBC190003DE72 /* PageDocument.swift */,
+				9CBB49C22704EF7C0003DE72 /* Core */,
+				9CBB49BF2704EF460003DE72 /* Home */,
+				9CBB49C12704EF6D0003DE72 /* BillPay */,
+				9CBB49C02704EF5A0003DE72 /* FindAProvider */,
 				9C5A41A026FBA3B800ECA655 /* MyChart */,
 			);
 			path = Pages;
@@ -179,8 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				9C5A419F26FBA36400ECA655 /* Core */,
-				9C5A419126FB73E200ECA655 /* FindAProviderDocument.swift */,
-				9C5A419326FB73FD00ECA655 /* BillPayDocument.swift */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				9C6C0FA026F8F4BE0059BC89 /* Home.swift */,
 				9C6C0FA226F8F4C50059BC89 /* MyChart.swift */,
 				9C6C0FA426F8F4D10059BC89 /* FindAProvider.swift */,
+				9CBB49C32704F19F0003DE72 /* BillPay.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -381,10 +388,11 @@
 		9CBB49A826FBC1320003DE72 /* PageViews */ = {
 			isa = PBXGroup;
 			children = (
-				9CBB499D26FBB9930003DE72 /* HomePageView */,
-				9CBB49AF26FBC9ED0003DE72 /* MyChartView */,
-				9CBB49AE26FBC9BA0003DE72 /* FindAProviderView */,
 				9CBB49A926FBC1640003DE72 /* Core */,
+				9CBB49C72704F35D0003DE72 /* BillPay */,
+				9CBB499D26FBB9930003DE72 /* HomePageView */,
+				9CBB49AE26FBC9BA0003DE72 /* FindAProviderView */,
+				9CBB49AF26FBC9ED0003DE72 /* MyChartView */,
 			);
 			path = PageViews;
 			sourceTree = "<group>";
@@ -432,6 +440,47 @@
 			children = (
 			);
 			path = Grids;
+			sourceTree = "<group>";
+		};
+		9CBB49BF2704EF460003DE72 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB49BD2704DD480003DE72 /* HomeDocument.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9CBB49C02704EF5A0003DE72 /* FindAProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A419126FB73E200ECA655 /* FindAProviderDocument.swift */,
+			);
+			path = FindAProvider;
+			sourceTree = "<group>";
+		};
+		9CBB49C12704EF6D0003DE72 /* BillPay */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A419326FB73FD00ECA655 /* BillPayDocument.swift */,
+			);
+			path = BillPay;
+			sourceTree = "<group>";
+		};
+		9CBB49C22704EF7C0003DE72 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB49A126FBBBBA0003DE72 /* EPages.swift */,
+				9CBB49A326FBBC190003DE72 /* PageDocument.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9CBB49C72704F35D0003DE72 /* BillPay */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB49C52704F3570003DE72 /* BillPayPage.swift */,
+			);
+			path = BillPay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,6 +615,7 @@
 				9C6C0FB126F90E3D0059BC89 /* PSections.swift in Sources */,
 				9C6C0FAC26F8F7C90059BC89 /* HomePage.swift in Sources */,
 				9C5A419226FB73E200ECA655 /* FindAProviderDocument.swift in Sources */,
+				9CBB49C62704F3570003DE72 /* BillPayPage.swift in Sources */,
 				9C6C0F6326F8F05E0059BC89 /* ContentView.swift in Sources */,
 				9C6C0F8E26F8F08B0059BC89 /* SectionGrid.swift in Sources */,
 				9CBB49A026FBB9C50003DE72 /* SplitView.swift in Sources */,
@@ -576,6 +626,7 @@
 				9C6C0FB926F94E2C0059BC89 /* SectionView.swift in Sources */,
 				9CBB49BA270252DD0003DE72 /* WebVM.swift in Sources */,
 				9C5A419026FB73CC00ECA655 /* MyChartDocument.swift in Sources */,
+				9CBB49C42704F19F0003DE72 /* BillPay.swift in Sources */,
 				9C6C0F9B26F8F4530059BC89 /* AppVM.swift in Sources */,
 				9CBB49B626FBCD870003DE72 /* SectionDocument.swift in Sources */,
 				9C6C0FA126F8F4BE0059BC89 /* Home.swift in Sources */,
@@ -584,6 +635,7 @@
 				9C5A419426FB73FD00ECA655 /* BillPayDocument.swift in Sources */,
 				9CBB49BC27025E710003DE72 /* MyChartPage.swift in Sources */,
 				9CBB49A226FBBBBA0003DE72 /* EPages.swift in Sources */,
+				9CBB49BE2704DD480003DE72 /* HomeDocument.swift in Sources */,
 				9CBB49AB26FBC17C0003DE72 /* AppView.swift in Sources */,
 				9CBB49A426FBBC190003DE72 /* PageDocument.swift in Sources */,
 				9CBB49AD26FBC1B30003DE72 /* PageView.swift in Sources */,

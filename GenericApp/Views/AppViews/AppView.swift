@@ -16,6 +16,22 @@ struct AppView: View {
     
     var body: some View {
         let pageView = PageView(pageVM: appVM.getPageVM())
-        pageView
+        VStack(spacing: 0){
+            pageView
+            HStack{
+                Button(action: {
+                    appVM.app.changePage(to: .myChart)
+                }) {
+                    Text("MyChart")
+                }
+                Spacer()
+                Button(action: {
+                    appVM.app.changePage(to: .billPay)
+                }) {
+                    Text("Bill Pay")
+                }
+            }.padding().background(Color.blue).foregroundColor(Color.white)
+        }
+        
     }
 }

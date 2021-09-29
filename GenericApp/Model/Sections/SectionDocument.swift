@@ -71,7 +71,6 @@ struct HalfSectionDocument: PSectionDocument {
         if let sectionType = type {
             self.type = sectionType
         }
-        
     }
 }
 

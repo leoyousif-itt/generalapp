@@ -23,6 +23,7 @@ class AApp: PApp {
         case .home: return Home()
         case .myChart: return MyChart()
         case .findAProvider: return FindAProvider()
+        case .billPay: return BillPay()
         }
     }
 }

@@ -11,4 +11,5 @@ enum Pages {
     case home
     case myChart
     case findAProvider
+    case billPay
 }

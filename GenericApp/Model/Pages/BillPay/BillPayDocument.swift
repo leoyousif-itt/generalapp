@@ -1,5 +1,5 @@
 //
-//  MyChartDocument.swift
+//  BillPayDocument.swift
 //  GenericApp
 //
 //  Created by Leo Yousif on 9/22/21.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct MyChartDoc: PPageDocument {
-    var title = "My Chart"
-    var url: URL? = URL(string: "https://mychart.slhs.org/mychart/Authentication/Login?")
+struct BillPayDocument: PPageDocument {
+    var title = "Bill Pay"
+    var url: URL? = URL(string: "https://www.stlukesbillpay.com/")
     
     var webVMContent: Content
     var sections: [SectionDocument]? = []
